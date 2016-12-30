@@ -134,7 +134,7 @@
 								ng-model="selectedEntry.${tableColumn.getName()}"
 								ng-readonly="operation == 'show'" required="required">
 							<div>
-								<select ng-model="selectedEntry.${tableColumn.getName()}" ng-options="option.ref_id as option.ref_name for option in refs" ng-disabled="operation == 'show'" required="required"></select>	
+								<select class="form-control" ng-model="selectedEntry.${tableColumn.getName()}" ng-options="option.ref_id as option.ref_name for option in refs" ng-disabled="operation == 'show'" required="required"></select>	
 							</div>
 #elseif ($tableColumn.getWidgetType() == "list")
 						  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -143,7 +143,7 @@
 								ng-model="selectedEntry.${tableColumn.getName()}"
 								ng-readonly="operation == 'show'" required="required">
 							<div>
-								<select multiple="true" ng-model="selectedEntry.${tableColumn.getName()}" ng-options="option.ref_id as option.ref_name for option in refs" ng-disabled="operation == 'show'" required="required"></select>	
+								<select class="form-control" multiple="true" ng-model="selectedEntry.${tableColumn.getName()}" ng-options="option.ref_id as option.ref_name for option in refs" ng-disabled="operation == 'show'" required="required"></select>	
 							</div>
 #elseif ($tableColumn.getWidgetType() == "integer")
 						  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
