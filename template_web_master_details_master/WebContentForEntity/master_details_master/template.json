@@ -4,9 +4,12 @@
     "image":"ui-for-entity-master-details-master.png",
     "sources":[{
         "name":"ui-for-entity-master-details-master.html",
-        "action":"generate"
+        "rootFolder":"WebContent",
+        "action":"generate",
+        "rename":"%s"
     }, {
         "name":"no_selection.html",
+        "rootFolder":"WebContent",
         "action":"copy"
     }],
     "parameters":[{
